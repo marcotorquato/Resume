@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reset.css">
+
+
+    <title>Currency Converter</title>
+</head>
+<body>
+
+    <header>
+        <img src="img/logo_alura.png" alt="logo alura" class="logo">
+    </header>
+    
+    <section>
+        <div class="home">
+
+            <h1 class="main-title">Currency Converter</h1>
+            <p class="main-description">Discover the value of $</p>
+
+            <img src="img/imersao_alura.png" alt="imersao dev">
+
+            
+            
+        </div>
+        <div class="input">
+            <input type="number" value="insert a value" id="value" placeholder="ENTER A VALUE BRL">
+        </div>
+
+        <div class="btn">
+            <button type="submit" class="main-button" onclick="Converter()" > Converter</button>
+
+            <p class="main-description -third" id="valueConvert"></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        
+        <a href="https://www.linkedin.com/in/marcotorquato/" target="_blank" class="main-description -second">Marco Torquato</a>
+    </footer>
+
+</body>
+
+<script src="/conversor/scripts.js"></script>
+</html>

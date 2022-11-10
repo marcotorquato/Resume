@@ -11,9 +11,8 @@ a {
   color: #4e05bb;
   text-decoration: none;
 }
-
 a:hover {
-  color: #067ded;
+  color: #4e05bb;
   text-decoration: none;
 }
 
@@ -610,7 +609,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #148af9;
+  color: #4e05bb;
 }
 
 .portfolio .portfolio-wrap:hover::before {

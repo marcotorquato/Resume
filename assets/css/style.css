@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #4e05bb;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -509,7 +509,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #0563bb;
+  color: #4f21cc;
 }
 
 .portfolio #portfolio-flters li:last-child {

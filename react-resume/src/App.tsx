@@ -11,8 +11,9 @@ function App() {
     <>
       <Header></Header>
       <Hero></Hero>
-      
+
       <Footer></Footer>
+  {/* <Preloader></Preloader> */}      
     </>
   )
 }

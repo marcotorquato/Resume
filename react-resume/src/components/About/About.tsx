@@ -29,16 +29,16 @@ export function About() {
               <div className="col-lg-6">
                 <ul>
                  
-                  <li><Icon icon="fluent-mdl2:website" /> <strong>Website:</strong> <span>www.marcotorquato.com</span></li>
-                  <li><Icon icon="bi:phone" /> <strong>Phone:</strong> <span>+39 371 5782684</span></li>
-                  <li><Icon icon="carbon:location-filled" /> <strong>City:</strong> <span>Genova, Italy</span></li>
+                  <li><Icon icon="fluent-mdl2:website" className='iconfy' /> <strong>Website:</strong> <span>www.marcotorquato.com</span></li>
+                  <li><Icon icon="bi:phone" className='iconfy' /> <strong>Phone:</strong> <span>+39 371 5782684</span></li>
+                  <li><Icon icon="carbon:location-filled" className='iconfy' /> <strong>City:</strong> <span>Genova, Italy</span></li>
                 </ul>
               </div>
               <div className="col-lg-6">
                 <ul>
-                  <li><Icon icon="icon-park-outline:degree-hat" /> <strong>Degree:</strong> <span>Bachelor</span></li>
-                  <li><Icon icon="line-md:email" /> <strong>Email:</strong> <span>contact@marcotorquato.com</span></li>
-                  <li><Icon icon="eos-icons:job" /> <strong>Freelance:</strong> <span>Available</span></li>
+                  <li><Icon icon="icon-park-outline:degree-hat" className='iconfy' /> <strong>Degree:</strong> <span>Bachelor</span></li>
+                  <li><Icon icon="line-md:email" className='iconfy' /> <strong>Email:</strong> <span>contact@marcotorquato.com</span></li>
+                  <li><Icon icon="eos-icons:job" className='iconfy' /> <strong>Freelance:</strong> <span>Available</span></li>
                 </ul>
               </div>
             </div>

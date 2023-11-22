@@ -1,11 +1,10 @@
-import './Skilss.css'
-import { Icon } from '@iconify/react';
+import './Skills.css'
 
 
-import { Progressbar } from './Progressbar';
+import { Progressbar } from './Progressbar/Progressbar';
 
 
-export function Skilss() {
+export function Skills() {
 
   return (
     <>
@@ -16,15 +15,21 @@ export function Skilss() {
         </div>
         <div className="row skills-content">
           <div className="col-lg-6">
-            <Progressbar skillName="HTML" skillValue={80} />
-            <Progressbar skillName="HTML" skillValue={80} />
-            <Progressbar skillName="HTML" skillValue={80} />
+            <Progressbar skillName="HTML" skillValue={90} />
+            <Progressbar skillName="CSS" skillValue={85} />
+            <Progressbar skillName="JavaScript" skillValue={80} />
+            <Progressbar skillName="Angular" skillValue={50} />
+            <Progressbar skillName="Python" skillValue={75} />
+            <Progressbar skillName="PMBOOK" skillValue={80} />
           </div>
 
           <div className="col-lg-6">
-            <Progressbar skillName="HTML" skillValue={80} />
-            <Progressbar skillName="HTML" skillValue={80} />
-            <Progressbar skillName="HTML" skillValue={80} />
+            <Progressbar skillName="React" skillValue={80} />
+            <Progressbar skillName="SASS" skillValue={85} />
+            <Progressbar skillName="TypeScript" skillValue={87} />
+            <Progressbar skillName="VUE" skillValue={450} />
+            <Progressbar skillName="Tailwind" skillValue={87} />
+            <Progressbar skillName="ITIL" skillValue={80} />
           </div>
         </div>
 

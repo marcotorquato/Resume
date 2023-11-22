@@ -1,7 +1,10 @@
 
+interface ProgressBarProps {
+  skillName: string;
+  skillValue: number;
+}
 
-
-export function Progressbar({skillName, skillValue }) {
+export function Progressbar({skillName, skillValue }: ProgressBarProps) {
 
   return (
     <>

@@ -9,6 +9,7 @@ import { Header } from './components/header/Header'
 import { Hero } from './components/Hero/Hero'
 import { Footer } from './components/Footer/Footer'
 import { About } from './components/About/About'
+import { Skills } from './components/Skills/Skills'
 
 
 
@@ -29,6 +30,7 @@ function App() {
       <Header></Header>
       <Hero></Hero>
       <About></About>
+      <Skills></Skills>
       <Footer></Footer>
   {/* <Preloader></Preloader> */}      
     </>

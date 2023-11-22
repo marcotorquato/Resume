@@ -28,7 +28,6 @@ export function About() {
             <div className="row">
               <div className="col-lg-6">
                 <ul>
-                 
                   <li><Icon icon="fluent-mdl2:website" className='iconfy' /> <strong>Website:</strong> <span>www.marcotorquato.com</span></li>
                   <li><Icon icon="bi:phone" className='iconfy' /> <strong>Phone:</strong> <span>+39 371 5782684</span></li>
                   <li><Icon icon="carbon:location-filled" className='iconfy' /> <strong>City:</strong> <span>Genova, Italy</span></li>
@@ -49,6 +48,4 @@ export function About() {
     </section>
     </>
   )
-
-
 }

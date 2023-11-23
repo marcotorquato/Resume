@@ -1,10 +1,55 @@
 import './Portfolio.css'
-
+import  Kross from '../../assets/portfolio/kross.png'
 
 import { Projects } from './Projects/Projects';
+import { useEffect } from 'react';
+import Isotope from 'isotope-layout';
+import AOS from 'aos';
 
 
 export function Portfolio() {
+
+  useEffect(() => {
+    const portfolioContainer = document.querySelector('.portfolio-container') as HTMLElement;
+
+    if (portfolioContainer) {
+      const portfolioIsotope = new Isotope(portfolioContainer, {
+        itemSelector: '.portfolio-item',
+      });
+
+      const portfolioFilters = document.querySelectorAll('#portfolio-flters li') as NodeListOf<HTMLElement>;
+
+      const handleClick = (e: Event) => {
+        e.preventDefault();
+
+        portfolioFilters.forEach((el) => {
+          el.classList.remove('filter-active');
+        });
+
+        if (e.target instanceof HTMLElement) {
+          e.target.classList.add('filter-active');
+
+          portfolioIsotope.arrange({
+            filter: e.target.getAttribute('data-filter') || '',
+          });
+
+          // Refresh AOS after the arrangement is complete
+          AOS.refresh();
+        }
+      };
+
+      portfolioFilters.forEach((filter) => {
+        filter.addEventListener('click', handleClick, true);
+      });
+
+      return () => {
+        // Cleanup event listeners when the component unmounts
+        portfolioFilters.forEach((filter) => {
+          filter.removeEventListener('click', handleClick, true);
+        });
+      };
+    }
+  }, []); // Empty dependency array ensures useEffect runs only once on mount
 
   return (
     <>
@@ -29,23 +74,35 @@ export function Portfolio() {
 
         <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
           <Projects
-          category="Web"
-          imageUrl="assets/img/portfolio/lascitiimpolinare.png"
-          galleryLink="assets/img/portfolio/lascitiimpolinare.png"
+          category="web"
+          imageUrl={Kross}
           externalLink="https://lasciatiimpollinare.com/"
         />
-        <Projects
-          category="Web"
-          imageUrl="assets/img/portfolio/lascitiimpolinare.png"
-          galleryLink="assets/img/portfolio/lascitiimpolinare.png"
+         <Projects
+          category="web"
+          imageUrl={Kross}
           externalLink="https://lasciatiimpollinare.com/"
         />
-        <Projects
-          category="Web"
-          imageUrl="assets/img/portfolio/lascitiimpolinare.png"
-          galleryLink="assets/img/portfolio/lascitiimpolinare.png"
+         <Projects
+          category="app"
+          imageUrl={Kross}
           externalLink="https://lasciatiimpollinare.com/"
         />
+         <Projects
+          category="pratices"
+          imageUrl={Kross}
+          externalLink="https://lasciatiimpollinare.com/"
+        /> <Projects
+        category="Web"
+        imageUrl={Kross}
+        externalLink="https://lasciatiimpollinare.com/"
+      />
+       <Projects
+          category="Web"
+          imageUrl={Kross}
+          externalLink="https://lasciatiimpollinare.com/"
+        />
+
         </div>
 
       </div>

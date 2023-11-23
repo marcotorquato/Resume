@@ -2,7 +2,6 @@
   background-color: #252525;
 }
 
-
 .skills .progress {
   height: 60px;
   display: block;
@@ -17,7 +16,7 @@
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #45505b;
+  color: #f2f2f2;
 }
 
 .skills .progress .skill .val {

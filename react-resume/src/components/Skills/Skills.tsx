@@ -27,7 +27,7 @@ export function Skills() {
             <Progressbar skillName="React" skillValue={80} />
             <Progressbar skillName="SASS" skillValue={85} />
             <Progressbar skillName="TypeScript" skillValue={87} />
-            <Progressbar skillName="VUE" skillValue={450} />
+            <Progressbar skillName="VUE" skillValue={45} />
             <Progressbar skillName="Tailwind" skillValue={87} />
             <Progressbar skillName="ITIL" skillValue={80} />
           </div>

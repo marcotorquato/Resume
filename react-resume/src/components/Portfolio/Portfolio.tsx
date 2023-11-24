@@ -49,7 +49,7 @@ export function Portfolio() {
         });
       };
     }
-  }, []); // Empty dependency array ensures useEffect runs only once on mount
+  }, []);
 
   return (
     <>

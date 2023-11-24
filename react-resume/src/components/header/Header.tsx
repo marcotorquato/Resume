@@ -1,8 +1,38 @@
 import './header.css'
 import { Icon } from '@iconify/react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export function Header() {
+
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+
+  const toggleMobileNav = () => {
+    setIsMobileNavOpen(!isMobileNavOpen);
+  };
+
+  const closeMobileNav = () => {
+    setIsMobileNavOpen(false);
+  };
+
+  useEffect(() => {
+    const onClickMobileNavToggle = (e: Event) => {
+      const body = document.querySelector('body');
+      const mobileNavToggle = e.target as HTMLElement;
+
+      if (body) {
+        body.classList.toggle('mobile-nav-active');
+        mobileNavToggle.classList.toggle('bi-list');
+        mobileNavToggle.classList.toggle('bi-x');
+      }
+    };
+
+    document.addEventListener('click', onClickMobileNavToggle);
+
+    return () => {
+      document.removeEventListener('click', onClickMobileNavToggle);
+    };
+  }, []);
+  
   useEffect(() => {
     const navbarlinks = document.querySelectorAll('#navbar .scrollto') as NodeListOf<HTMLAnchorElement>;
 
@@ -30,25 +60,44 @@ export function Header() {
       window.removeEventListener('load', navbarlinksActive);
       window.removeEventListener('scroll', navbarlinksActive);
     };
-  }, []); // Empty dependency array means this effect runs once after initial render
-
-
+  }, []); 
 
   return (
     <>
-    <Icon icon="bi:list"  className='mobile-nav-toggle '/> 
-  <header id="header" className="d-flex flex-column justify-content-center">
+    <div className='icon_mobile'>
+      <Icon
+          icon={isMobileNavOpen ? 'bi:x' : 'bi:list'}
+          className="mobile-nav-toggle"
+          onClick={toggleMobileNav}
+        />
+    </div>
 
-    <nav id="navbar" className="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" className="nav-link scrollto active"><Icon icon="ic:outline-home" /> <span>Home</span></a></li>
-        <li><a href="#about" className="nav-link scrollto"><Icon icon="tdesign:user" /><span>About</span></a></li>
-        <li><a href="#portfolio" className="nav-link scrollto"><Icon icon="solar:book-broken" /> <span>Projects</span></a></li>
-        <li><a href="#contact" className="nav-link scrollto"><Icon icon="bi:envelope" /><span>Contact</span></a></li>
-      </ul>
-    </nav>
-
-  </header>
+      <header id="header" className="d-flex flex-column justify-content-center">
+        <nav id="navbar" className={`navbar nav-menu${isMobileNavOpen ? ' mobile-nav-active' : ''}`}>
+          <ul>
+            <li>
+              <a href="#hero" className="nav-link scrollto active" onClick={closeMobileNav}>
+                <Icon icon="ic:outline-home" /> <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#about" className="nav-link scrollto" onClick={closeMobileNav}>
+                <Icon icon="tdesign:user" /><span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio" className="nav-link scrollto" onClick={closeMobileNav}>
+                <Icon icon="solar:book-broken" /> <span>Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="nav-link scrollto" onClick={closeMobileNav}>
+                <Icon icon="bi:envelope" /><span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </>
   )
 

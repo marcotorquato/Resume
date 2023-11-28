@@ -12,7 +12,7 @@ import { About } from './components/About/About'
 import { Skills } from './components/Skills/Skills'
 import { Portfolio } from './components/Portfolio/Portfolio'
 import { Preloader } from './components/Preloader/Preloader'
-
+import { Contact } from './components/Contact/Contact'
 
 
 
@@ -35,6 +35,7 @@ function App() {
       <About></About>
       <Skills></Skills>
       <Portfolio></Portfolio>
+      <Contact></Contact>
       <Footer></Footer>
       <Preloader></Preloader>
      {/*<Preloader></Preloader>  */}    

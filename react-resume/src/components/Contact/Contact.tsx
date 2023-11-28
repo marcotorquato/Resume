@@ -76,7 +76,7 @@ export function Contact() {
               <input 
               type="hidden" 
               name="_next" 
-              value="https://marcotorquato.com/pomotimer.html"
+              value="https://marcotorquato.com"
               />
 
               <input 

@@ -36,7 +36,8 @@ function App() {
       <Skills></Skills>
       <Portfolio></Portfolio>
       <Footer></Footer>
-    <Preloader></Preloader>      
+      <Preloader></Preloader>
+     {/*<Preloader></Preloader>  */}    
     </>
   )
 }

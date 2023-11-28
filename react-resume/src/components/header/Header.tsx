@@ -19,11 +19,13 @@ export function Header() {
       const body = document.querySelector('body');
       const mobileNavToggle = e.target as HTMLElement;
 
+     if (mobileNavToggle.classList.contains('mobile-nav-toggle')) {
       if (body) {
         body.classList.toggle('mobile-nav-active');
         mobileNavToggle.classList.toggle('bi-list');
         mobileNavToggle.classList.toggle('bi-x');
       }
+    }
     };
 
     document.addEventListener('click', onClickMobileNavToggle);
@@ -64,13 +66,13 @@ export function Header() {
 
   return (
     <>
-    <div className='icon_mobile'>
+    
       <Icon
           icon={isMobileNavOpen ? 'bi:x' : 'bi:list'}
           className="mobile-nav-toggle"
           onClick={toggleMobileNav}
         />
-    </div>
+
 
       <header id="header" className="d-flex flex-column justify-content-center">
         <nav id="navbar" className={`navbar nav-menu${isMobileNavOpen ? ' mobile-nav-active' : ''}`}>

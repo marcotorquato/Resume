@@ -76,6 +76,8 @@ export function Contact() {
               type="hidden" 
               name="_next" 
               value="https://marcotorquato.com/pomotimer.html"/>
+
+              <input type="hidden" name="_autoresponse" value="Hello, I received your email! I will get in touch with you as soon as possible!"/>
               <div className="form-group mt-3">
                 <textarea
                   className="form-control"

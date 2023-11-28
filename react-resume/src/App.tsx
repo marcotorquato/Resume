@@ -37,8 +37,7 @@ function App() {
       <Portfolio></Portfolio>
       <Contact></Contact>
       <Footer></Footer>
-      <Preloader></Preloader>
-     {/*<Preloader></Preloader>  */}    
+      <Preloader></Preloader>  
     </>
   )
 }

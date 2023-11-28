@@ -1,6 +1,6 @@
 import './Links.css'
 import { Icon } from '@iconify/react';
-import { avatar } from '../../assets/link/avatar.png'
+import  avatar  from '../../assets/link/avatar.png'
 
 
 export function Links() {

@@ -1,158 +1,87 @@
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-
+.instagramSection {
+  padding-top: 8rem;
 }
 
-.portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 25px auto;
-  list-style: none;
+.instagramSection h2 {
+  font-size: 2rem;
+  line-height: 2.1875rem;
   text-align: center;
-  background: #f2f2f2;
-  border-radius: 50px;
-  padding: 2px 15px;
-}
-
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
   text-transform: uppercase;
-  color: #252525;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-  color: #efc852;
-}
-
-.portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
-
-.portfolio .portfolio-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  background: rgba(69, 80, 91, 0.8);
-}
-
-.portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(255, 255, 255, 0.7);
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
-
-.portfolio .portfolio-wrap .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.instagramSection p {
+  margin: .25rem 0 2rem 0;
   text-align: center;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
+}
+
+
+
+.instagramSection .gallery {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  height: 50vh;
 }
 
-.portfolio .portfolio-wrap .portfolio-info::before {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
+.instagramSection .gallery::before {
+  content: '';
+  background: linear-gradient(270.22deg, rgba(33, 32, 27, 0) -2.7%, #21201B 88.44%);
   position: absolute;
-  top: 35px;
-  left: 35px;
-  border-top: 3px solid #d7dce1;
-  border-left: 3px solid #d7dce1;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-
-.portfolio .portfolio-wrap .portfolio-info::after {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  bottom: 35px;
-  right: 35px;
-  border-bottom: 3px solid #d7dce1;
-  border-right: 3px solid #d7dce1;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
-  color: #45505b;
-  font-weight: 600;
-}
-
-.portfolio .portfolio-wrap .portfolio-info p {
-  color: #45505b;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-}
-
-.portfolio .portfolio-wrap .portfolio-links {
-  text-align: center;
-  z-index: 4;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a {
-  color: #45505b;
-  margin: 0 2px;
-  font-size: 28px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #000;
-}
-
-.portfolio .portfolio-wrap:hover::before {
-  top: 0;
   left: 0;
+  top: 0;
+  z-index: 9;
+  width: 10%;
+  height: 100%;
+}
+
+.instagramSection .gallery::after {
+  content: '';
+  background: linear-gradient(270.22deg, #21201B 7.41%, rgba(33, 32, 27, 0) 91.38%);
+  position: absolute;
   right: 0;
-  bottom: 0;
-  opacity: 1;
+  top: 0;
+  z-index: 9;
+  width: 10%;
+  height: 100%;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
-  opacity: 1;
+.instagramSection .looptext {
+  background-color: var(--yellow);
+  padding: .625rem 0;
+  overflow: hidden;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info::before {
-  top: 15px;
-  left: 15px;
+.instagramSection .looptext div {
+  display: flex;
+  animation: marquee 10s linear infinite running;
+  column-gap: .75rem;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info::after {
-  bottom: 15px;
-  right: 15px;
+.instagramSection .looptext div:hover {
+  animation-play-state: paused;
 }
 
+.instagramSection .looptext h3 {
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(29, 6, 5, 0.9);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s ease;
+  white-space: nowrap;
+}
 
+@keyframes marquee {
+  0% { transform: translateX(0) }
+  100% { transform: translate(-50%) }
+}
 
-
+@keyframes marqueephoto {
+  0% { transform: translateX(0) }
+  100% { transform: translate(50%) }
+}

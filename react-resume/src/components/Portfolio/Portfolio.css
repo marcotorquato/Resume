@@ -23,6 +23,9 @@
   overflow: hidden;
   position: relative;
   height: 50vh;
+
+  animation: marqueephoto 30s linear infinite running;
+  width: max-content;
 }
 
 .instagramSection .gallery::before {
@@ -34,6 +37,7 @@
   z-index: 9;
   width: 10%;
   height: 100%;
+
 }
 
 .instagramSection .gallery::after {
@@ -45,25 +49,26 @@
   z-index: 9;
   width: 10%;
   height: 100%;
+
 }
 
-.instagramSection .looptext {
+ .looptext {
   background-color: var(--yellow);
   padding: .625rem 0;
   overflow: hidden;
 }
 
-.instagramSection .looptext div {
+ .looptext div {
   display: flex;
   animation: marquee 10s linear infinite running;
   column-gap: .75rem;
 }
 
-.instagramSection .looptext div:hover {
+ .looptext div:hover {
   animation-play-state: paused;
 }
 
-.instagramSection .looptext h3 {
+ .looptext h3 {
   font-size: 1.75rem;
   line-height: 1.75rem;
   text-align: center;

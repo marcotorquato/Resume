@@ -1,6 +1,6 @@
 @import 'node_modules/scroll-carousel/dist/scroll.carousel.min.css';
 
-.my-slide .img-projects{
+.img-projects{
   align-items: center;
   justify-content: center;
   overflow: hidden;

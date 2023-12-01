@@ -88,7 +88,7 @@ export function Header() {
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="nav-link scrollto" onClick={closeMobileNav}>
+              <a href="#projects" className="nav-link scrollto" onClick={closeMobileNav}>
                 <Icon icon="solar:book-broken" /> <span>Projects</span>
               </a>
             </li>

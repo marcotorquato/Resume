@@ -1,9 +1,0 @@
-@import 'node_modules/scroll-carousel/dist/scroll.carousel.min.css';
-
-.img-projects{
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  display: flex;
-  width: 100%;
-}

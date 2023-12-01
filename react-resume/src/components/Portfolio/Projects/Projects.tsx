@@ -8,11 +8,9 @@ export function Projects({imageSrc, altText }: MyCarouselProps) {
 
   return (
     <>
+      
+        <img className="d-block w-50"src={imageSrc} alt={altText} /> 
 
-    <div className="my-carousel gallery ">
-      <img className="img-projects" src={imageSrc} alt={altText} /> 
-    </div>
-    
     </>
   )
 }

@@ -13,37 +13,56 @@ export function Portfolio() {
 
   return (
     <>
-      <section className='instagramSection' id="instagram">
-      <div className="container">
+      <section className='projectsSection' id="projects">
+      <div className="section-title">
         <h2>Projects</h2>
-        <p>Todos os nossos clientes são tratados</p>
       </div>
 
-      <div className="my-carousel gallery ">
-      <Projects imageSrc={Kross} altText="Project Kross" />
-      <Projects imageSrc={Kross} altText="Project Kross" />
-      <Projects imageSrc={Kross} altText="Project Kross" />
-      <Projects imageSrc={Kross} altText="Project Kross" />
-      <Projects imageSrc={Kross} altText="Project Kross" />
+    
+    <div className='looptext-projects'>
+        <div>
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+          <Projects imageSrc={Kross} altText="Project Kross" />
+        </div>
       </div>
+    
 
       <div className='looptext'>
         <div>
-          <h3>• #Royalsburger</h3>
-          <h3>• #Royalsburger</h3>
-          <h3>• #Royalsburger</h3>
-          <h3>• #Royalsburger</h3>
-          <h3>• #Royalsburger</h3>
-          <h3>• #Royalsburger</h3>
-          <h3>• #Royalsburger</h3>
-          <h3>• #Royalsburger</h3>
-          <h3>• #Royalsburger</h3>
-          <h3>• #Royalsburger</h3>
-          <h3>• #Royalsburger</h3>
-          <h3>• #Royalsburger</h3>
-          <h3>• #Royalsburger</h3>
-          <h3>• #Royalsburger</h3>
-          <h3>• #Royalsburger</h3>
+          <h3>• #StartYourProject</h3>
+          <h3>• #StartYourProject</h3>
+          <h3>• #StartYourProject</h3>
+          <h3>• #StartYourProject</h3>
+          <h3>• #StartYourProject</h3>
+          <h3>• #StartYourProject</h3>
+          <h3>• #StartYourProject</h3>
+          <h3>• #StartYourProject</h3>
+          <h3>• #StartYourProject</h3>
+          <h3>• #StartYourProject</h3>
+          <h3>• #StartYourProject</h3>
+          <h3>• #StartYourProject</h3>
+          <h3>• #StartYourProject</h3>
+          <h3>• #StartYourProject</h3>
+          <h3>• #StartYourProject</h3>
         </div>
       </div>
     </section>

@@ -29,7 +29,8 @@
 }
 
  .looptext {
-  background-color: var(--yellow);
+  background: rgb(37,37,37);
+  background: linear-gradient(0deg, rgba(37,37,37,1) 0%, rgba(239,200,82,0.7875525210084033) 95%, rgba(37,37,37,1) 100%);
   padding: .625rem 0;
   overflow: hidden;
 }

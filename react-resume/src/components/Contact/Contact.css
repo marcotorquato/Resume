@@ -124,7 +124,7 @@
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #0678e3;
+  background: #f2f2f2;
 }
 
 @-webkit-keyframes animate-loading {

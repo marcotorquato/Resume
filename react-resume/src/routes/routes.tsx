@@ -13,7 +13,7 @@ function MainRoutes() {
         <Route path="/" element={<Home/>} />
         <Route path="/links" element={<Links/>} />
         <Route path="/pomotimer" element={<Pomotimer/>} />
-    </Routes>,
+    </Routes>
     </>
 
   )

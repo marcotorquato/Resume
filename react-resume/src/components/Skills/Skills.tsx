@@ -20,7 +20,7 @@ export function Skills() {
             <Progressbar skillName="JavaScript" skillValue={80} />
             <Progressbar skillName="Angular" skillValue={50} />
             <Progressbar skillName="Python" skillValue={75} />
-            <Progressbar skillName="PMBOOK" skillValue={80} />
+            <Progressbar skillName="PMBOK" skillValue={80} />
           </div>
 
           <div className="col-lg-6">

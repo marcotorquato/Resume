@@ -7,13 +7,10 @@
 
  .looptext-projects div {
   display: flex;
-  animation: marqueephoto 7s linear infinite running;
+  animation: marqueephoto 15s linear infinite running;
   column-gap: .75rem;
 }
 
- .looptext-projects div:hover {
-  animation-play-state: paused;
-}
 
  .looptext-projects h3 {
   font-size: 1.75rem;

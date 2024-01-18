@@ -38,7 +38,7 @@ export function Links() {
           </li>
 
           <li>
-            <a href="https://www.marcotorquato.com/pomotimer.html">
+            <a href="https://www.marcotorquato.com/pomotimer">
               Study with me - Pomodoro Timer
             </a>
           </li>
@@ -71,7 +71,7 @@ export function Links() {
             target="_blank"
             className="duolingo"
           >
-            <i><Icon icon="mdi:duolingo" /></i>
+            <i><Icon icon="arcticons:duolingo-alt" /></i>
           </a>
         </div>
 
